@@ -1,0 +1,354 @@
+<!doctype html>
+
+<html lang="en">
+
+
+
+
+         <head>
+
+           <meta charset="utf-8">
+
+           <meta name="viewport" content="width=device-width, initial-scale=1">
+
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+          <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+          <link rel="stylesheet"  href="example.css">
+
+        </head>
+
+
+
+    
+         <title>
+
+             Tupac Amaru Shakur
+
+         </title>
+
+
+
+
+   <div class="body22">
+
+       <body>
+
+
+         <div class="content2">
+
+            <span class="border border-black">
+
+                 <p><b>THIS CONCERT IS ORGANIZED BY <a href="http://www.tupacshakurfoundation.org/" target="_blank"><br>THE TUPAC AMARU SHAKUR FOUNDATION</a>
+
+                 <br> ON 16 JUNE 2023 AT <a href="https://www.houseofblues.com/" target="_blank"><br>HOUSE OF BLUES</a>
+
+                </p>
+
+
+
+              
+
+
+
+
+                      
+               <div class="h12">
+
+                  <h1>
+                     2PAC MEMORIAL CONCERT
+                  </h1>
+
+               </div>
+
+
+
+
+
+
+            <div class="form">
+
+
+
+               <h2>
+
+                 Please complete the requirements
+
+               </h2>
+
+                          
+               
+               <form id="myForm" onsubmit="return validateForm()">
+
+
+
+                     <label for="name">
+
+                        <b>
+                           Enter Your Passport Name:
+
+                        </b>
+
+                     </label>
+
+
+
+                     <br>
+
+
+
+                     <div class="nameform">
+
+                       <input type="text" id="name" required>
+
+                     </div>
+
+                         
+                     
+
+                     <label for="Surname">
+
+                         <b>
+                           Enter Your Surname:
+                        </b>
+
+                     </label>
+                     
+
+
+
+                     <br>
+
+
+
+
+                     <div class="surnameform">
+
+                        <input type="text" id="Surname" required>
+                  
+
+                     </div>
+
+
+
+
+                     <label for="email">
+
+                        <b>
+                           Enter Your Email:
+                        </b>
+
+                     </label>
+                     
+
+
+                     <br>
+
+
+
+
+                     <div class="emailform">
+
+                        <input type="email" id="email" required>             
+
+                     </div>
+
+
+
+                     <label for="phone">
+
+                        <b>
+
+                           Enter A Valid Phone Number:
+
+                        </b>
+
+                     </label>
+
+
+
+
+                     <br>
+
+
+
+
+                     <div class="numberform">
+
+                        <input type="number" id="phone Number"  required>
+
+                     </div>
+
+
+
+
+                     <script>
+
+                        function calculateTotal() {
+
+                            var amount = document.getElementById("amount").value;
+                                                         
+                            var fixedPrice = 100;
+                                                      
+                            var total = amount * fixedPrice;
+                                                      
+                            document.getElementById("totalPrice").textContent = total;
+                                                      
+                            }
+
+                     </script>
+
+
+
+
+
+                     <h1>
+                        Book Your Ticket
+                     </h1>
+
+
+
+
+                     <label for="amount">
+                                                               
+                        <b>
+                           Select Amount:
+                        </b>
+                                                            
+
+
+                     </label>
+                      
+                     
+
+                        <div class="amountform">
+
+                           <input type="number" id="amount" name="amount" min="1"onchange="calculateTotal()" required><br>
+                                                           
+                        </div>
+
+
+
+
+                     <br>
+              
+
+
+
+
+                     <p>
+
+                        <b>Total Price: $</b><span id="totalPrice">0</span>
+
+                     </p>
+                
+
+
+
+                     <h1>
+                        
+                        Payment
+
+                     </h1>
+
+
+
+                    
+                     <label for="cardPhone Number">
+
+                        <b>
+
+                          Card Number:
+
+                        </b>
+
+                     </label>
+
+
+
+                     <div class="cardnumberform">
+                    
+                      <input type="text" id="cardPhone Number" name="cardPhone Number" oninput="validateCard()" required><br>
+
+                     </div>
+
+
+
+                     <br>
+               
+
+
+                  <div class="submit">
+
+
+                         <button class="get your ticket-button" onclick="getyourticker()">
+
+                            <b>
+
+                              Book Your Ticket
+
+                           </b>
+
+
+                        </button>
+                                       
+                        
+
+                           <script>
+
+                               function getyourticker() {
+
+                               window.location.href = "tupac.html";
+
+                               }
+
+                           </script>
+
+
+
+
+                     <div class="back">
+
+                        <button class="goback-button" onclick="goBack()">
+
+                           <b>
+
+                            Back
+
+                           </b>
+                        </div>
+                  </div>
+
+
+
+                           <script>
+      
+                               function goBack() {
+       
+                               window.location.href = "index.html";
+      
+                               }
+
+                           </script>
+            </div>
+
+
+
+
+                  </div>
+
+
+               </form>   
+
+  
+         
+      </body>
+
+
+   </div>
+
+   
+</html>
